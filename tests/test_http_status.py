@@ -1,4 +1,4 @@
-from httpkit import HttpStatus
+from http_kit import HttpStatus
 
 
 def test_http_status_str() -> None:

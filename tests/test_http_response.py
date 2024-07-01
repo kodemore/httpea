@@ -2,7 +2,7 @@ from io import BytesIO
 
 import pytest
 
-from httpkit import (HttpCookie, HttpHeaders, HttpResponse, HttpStatus,
+from http_kit import (HttpCookie, HttpHeaders, HttpResponse, HttpStatus,
                      JsonHttpMessage)
 
 

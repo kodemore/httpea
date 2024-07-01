@@ -3,7 +3,7 @@ from copy import copy
 
 import pytest
 
-from httpkit import HttpNotFoundError, Route, Router
+from http_kit import HttpNotFoundError, Route, Router
 
 
 def test_route_parsing() -> None:

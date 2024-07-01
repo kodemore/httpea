@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "httpkit"
+name = "http-kit"
 version = "1.0.0"
 description = "Http kit is a python library for abstracting http protocol components."
 authors = ["Dawid Kraczkowski <dawid.kraczkowski@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [
-  {include = "httpkit"},
+  {include = "http_kit"},
 ]
 
 classifiers = [

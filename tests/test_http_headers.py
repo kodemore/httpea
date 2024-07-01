@@ -1,6 +1,6 @@
 from copy import copy
 
-from httpkit import HttpHeaders
+from http_kit import HttpHeaders
 
 
 def test_can_instantiate():

@@ -3,7 +3,7 @@ from io import BytesIO
 from fixtures.body_fixtures import (binary_body, cat_file, cat_file_body,
                                     form_body, json_body, multipart_body)
 
-from httpkit import (BinaryHttpMessage, FormHttpMessage, HttpMethod,
+from http_kit import (BinaryHttpMessage, FormHttpMessage, HttpMethod,
                      HttpRequest, JsonHttpMessage, MultipartHttpMessage,
                      SimpleHttpMessage, UploadedFile, YamlHttpMessage)
 
