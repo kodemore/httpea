@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "http-kit"
+name = "httpea"
 version = "1.0.0"
-description = "Http kit is a python library for abstracting http protocol components."
+description = "Httpea is a python library for abstracting http protocol components."
 authors = ["Dawid Kraczkowski <dawid.kraczkowski@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [
-  {include = "http_kit"},
+  {include = "httpea"},
 ]
 
 classifiers = [

@@ -3,9 +3,9 @@ from io import BytesIO
 from fixtures.body_fixtures import (binary_body, cat_file, cat_file_body,
                                     form_body, json_body, multipart_body)
 
-from http_kit import (BinaryHttpMessage, FormHttpMessage, HttpMethod,
-                     HttpRequest, JsonHttpMessage, MultipartHttpMessage,
-                     SimpleHttpMessage, UploadedFile, YamlHttpMessage)
+from httpea import (BinaryHttpMessage, FormHttpMessage, HttpMethod,
+                    HttpRequest, JsonHttpMessage, MultipartHttpMessage,
+                    SimpleHttpMessage, UploadedFile, YamlHttpMessage)
 
 
 def test_parse_multipart_body() -> None:

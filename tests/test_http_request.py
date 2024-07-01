@@ -5,7 +5,7 @@ from typing import Union
 
 import pytest
 
-from http_kit import HttpHeaders, HttpMethod, HttpRequest
+from httpea import HttpHeaders, HttpMethod, HttpRequest
 
 
 def test_can_instantiate() -> None:

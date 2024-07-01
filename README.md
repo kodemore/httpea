@@ -1,6 +1,6 @@
-# httpkit
+# Httpea
 
-Httpkit is an abstraction library which provides a set of classes that represent different parts of the http communication process. These classes can be used to build custom http clients and servers, or to extend existing ones.
+Httpea is an abstraction library which provides a set of classes that represent different parts of the http communication process. These classes can be used to build custom http clients and servers, or to extend existing ones.
 
 The idea behind this library is to provide an interface for manipulating http requests and responses in a way that is easy to use and understand.
 
@@ -14,14 +14,14 @@ The idea behind this library is to provide an interface for manipulating http re
 
 ## Installation
 
-You can install httpkit using pip:
+You can install Httpea using pip:
 ```bash
-pip install httpkit
+pip install httpea
 ```
 
 ,or with poetry:
 ```bash
-poetry add httpkit
+poetry add httpea
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ This is an example guide of how basic usage of the library looks like. More deta
 HttpRequest objects can be compared, they support query string parsing, cookies, headers and body parsing, including multipart body parsing.
 
 ```python
-from httpkit import HttpRequest, HttpCookie
+from httpea import HttpRequest, HttpCookie
 
 request = HttpRequest(HttpRequest.GET, "/" ,query_string="name=John&age=30")
 # set headers
@@ -54,7 +54,7 @@ assert str(request.query_string) == "name=John&age=30"
 Same like HttpRequest, HttpResponse objects can be compared, they support cookies, headers and body writing.
 
 ```python
-from httpkit import HttpResponse, HttpCookie, HttpStatus
+from httpea import HttpResponse, HttpCookie, HttpStatus
 
 response = HttpResponse("Example response", HttpStatus.OK)
 
@@ -68,7 +68,7 @@ response.cookies.append(HttpCookie("cookie-name", "cookie-value", secure=True, h
 ### Route and Router
 
 ```python
-from httpkit import Route
+from httpea import Route
 
 route = Route("/example/{pattern}")
 result = route.match("/example/test")
@@ -85,7 +85,7 @@ assert not route.match("/invalid")
 ```
 
 ```python
-from httpkit import Router, HttpRequest, HttpNotFoundError
+from httpea import Router, HttpRequest, HttpNotFoundError
 
 router = Router()
 router.append("/users/{user_id}", lambda request, response, user_id: response.write(user_id), HttpRequest.GET)

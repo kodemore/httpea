@@ -3,7 +3,7 @@ from datetime import datetime
 
 import pytest
 
-from http_kit import HttpCookie, HttpCookieJar
+from httpea import HttpCookie, HttpCookieJar
 
 
 def test_can_instantiate() -> None:

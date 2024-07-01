@@ -1,4 +1,4 @@
-SOURCE_DIR = http_kit
+SOURCE_DIR = httpea
 TEST_DIR = tests
 PROJECT_DIRS = $(SOURCE_DIR) $(TEST_DIR)
 PWD := $(dir $(abspath $(firstword $(MAKEFILE_LIST))))

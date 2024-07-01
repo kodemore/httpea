@@ -2,8 +2,8 @@ from io import BytesIO
 
 import pytest
 
-from http_kit import (HttpCookie, HttpHeaders, HttpResponse, HttpStatus,
-                     JsonHttpMessage)
+from httpea import (HttpCookie, HttpHeaders, HttpResponse, HttpStatus,
+                    JsonHttpMessage)
 
 
 def test_can_instantiate() -> None:

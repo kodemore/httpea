@@ -2,8 +2,8 @@ from copy import deepcopy
 
 from pytest import mark, raises
 
-from http_kit import HttpQueryString
-from http_kit.http_query_string import build_dict_from_path, parse_qs
+from httpea import HttpQueryString
+from httpea.http_query_string import build_dict_from_path, parse_qs
 
 
 @mark.parametrize(
